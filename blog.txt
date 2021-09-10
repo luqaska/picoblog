@@ -1,1 +1,6 @@
-2020-10-01T08:05:33Z	(#MWZkYw)	Welcome to picoblog. For updates and such, visit [https://0xff.nu/picoblog](https://0xff.nu/picoblog).
+# nick        = lucas
+# url         = https://picoblog.lu700.repl.co/blog.txt
+# avatar      = https://avatars.githubusercontent.com/u/83518257
+# description = aaaa
+2021-08-27T20:08:55Z	(#tad8XR4)	geektweet
+2021-08-27T20:09:10Z	(#DcV8475)	lol @<thing https://feed-url>
