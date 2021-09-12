@@ -14,7 +14,7 @@ class Slimdown {
 		'/\~\~(.*?)\~\~/' => '<del>\1</del>',                     // del
 		'/\:\"(.*?)\"\:/' => '<q>\1</q>',                         // quote
 		'/`(.*?)`/' => '<code>\1</code>',                         // inline code
-		'/(?:!\[([^\[]+)\]\(([^\)]+)\))/' => '<img src=\'\2\' alt=\'\1\' loading=\'lazy\'>',
+		'/(?:!\[([^\[]+)\]\(([^\)]+)\))/' => '<br><a href=\'\2\' target=\'\_blank\'><img class=\'cimg\' src=\'\2\' alt=\'\1\' loading=\'lazy\'></a>',
 		'/==(.*?)==/' => '<mark>\1</mark>',
 	);
 
