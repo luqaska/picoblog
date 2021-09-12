@@ -1,5 +1,8 @@
 <?php // Settings (most of them will be eliminated soon)
-$url="https://picoblog.lu700.repl.co/blog.txt";
-$nick = "lucas";
-$avatar = "https://avatars.githubusercontent.com/u/83518257";
-$description = "aaaa"; ?>
+$url="blog.txt";
+$name = "Name";
+$nick = "luqaska";
+$avatar = "";
+$description = "Q?";
+$ubication = "";
+$website = ""; // Please! Don't put the protocol (https:// | http://) ?>
