@@ -24,7 +24,7 @@ $entries = ($query) ? $mb->getEntries($query) : $mb->getEntries('all');
 </head>
 
 <body>
-  <a href="<?= $_SERVER['PHP_SELF'] ?>"><header>
+  <a href="?"><header>
     <h1><img src="<?= $avatar ?>" alt="Avatar"> <?= $name ?> <span id="nick" style="font-weight:normal;font-size:50%">(<?php echo $nick ?>@<?php echo $_SERVER['HTTP_HOST'] ?>)</span></h1>
   </header></a>
   <div id="subh"><br>
