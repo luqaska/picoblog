@@ -13,19 +13,19 @@ $entries = ($query) ? $mb->getEntries($query) : $mb->getEntries('all');
 ?>
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="<?= $lang ?>">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php echo($nick) ?>@<?= $_SERVER['HTTP_HOST'] ?>)</title>
+  <title><?php echo "{$name} ({$nick}@{$_SERVER['HTTP_HOST']})" ?></title>
   <link rel="icon" href="<?php echo $avatar ?>">
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
   <a href="?"><header>
-    <h1><img src="<?= $avatar ?>" alt="Avatar"> <?= $name ?> <span id="nick" style="font-weight:normal;font-size:50%">(<?php echo $nick ?>@<?php echo $_SERVER['HTTP_HOST'] ?>)</span></h1>
+    <h1><img src="<?= $avatar ?>" alt="Avatar"> <?= $name ?> <span id="nick" style="font-weight:normal;font-size:50%"><?php echo "({$nick}@{$_SERVER['HTTP_HOST']})" ?></span></h1>
   </header></a>
   <div id="subh"><br>
     <desc><?= $description ?><?php echo("<a style='color:#e0e0e0;cursor:default'>.</a><a href='$url'><button id='follow'>Follow</button></a>"); ?></desc>
