@@ -1,4 +1,5 @@
 <?php // Settings (most of them will be eliminated soon)
+$lang="es";
 $url="blog.txt";
 $name = "Name";
 $nick = "luqaska";
