@@ -1,19 +1,68 @@
-@import url("https://lucas.koyu.space/styles.css");
-.e{
-  margin:1px 10px;
-  padding:10px;
+@import url("https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css");
+
+/* Body */
+body{
+  font-family:sans-serif;
+  margin:0;
+}
+a{
+  text-decoration:none;
+  color:rgb(59, 150, 180);
+}
+
+/* Header */
+header{
+  /*width:100%;*/
+  padding: 10px;
   background:repeat-y center fixed url("bkg.png");
   background-size:cover;
   color:white;
 }
+header img{
+  width:40px;
+  height:40px;
+  border-radius:15px;
+}
+
+/* Sub-header */
+#subh{
+  padding:1px 20px;
+  background:#e0e0e0;
+}
+#subh p{
+  color:rgb(83, 83, 83);
+  text-align:left;
+}
+#subh p span{
+  margin:0px 8px 0px 0px;
+}
+#follow{
+  float:right;
+  background:rgb(59, 150, 180);
+  color:white;
+  border:1px solid rgb(79, 151, 175);
+  border-radius:2px;
+  font-size:100%;
+}
+
+/* Entries */
+.e{
+  margin:5px 10px 0px;
+  padding:10px;
+  background:repeat-y center fixed url("bkg.png");
+  background-size:cover;
+  color:white;
+  border-radius:10px;
+}
 .e a{
   color:white;
 }
-/*.text{
-  float:left;
-}*/
-.date{
-  float:right;
+.e.show h2{
+  font-weight:normal;
+}
+.e.show .date{
+  font-size:70%;
+  font-weight:normal;
 }
 .pp{
   background:url("https://avatars.githubusercontent.com/u/83518257");
