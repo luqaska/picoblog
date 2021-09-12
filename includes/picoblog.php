@@ -1,5 +1,4 @@
 <?php
-
 /**
  * picoblog
  * 
@@ -83,7 +82,7 @@ class PicoBlog
                 $pattern = '/^(?<date>[^\t]+)\t(?<entry>.+)/';
                 break;
             case 'picoblog':
-                $pattern = '/^(?<date>[^\t]+)\t\(#(?<id>[a-zA-Z0-9]{1,7})\)\t(?<entry>.+)/';
+                $pattern = '/^(?<date>[^\t]+)\t\(#(?<id>[a-zA-Z0-9]{6,7})\)\t(?<entry>.+)/';
                 break;
         }
         foreach ($entries as $i => $entry) {
@@ -205,11 +204,11 @@ class PicoBlog
             include "settings.php";
             $text = \Slimdown::render($entry['entry']);
             $date = $entry['date'];
-            $date_p = date("d-m-Y", strtotime($entry['date']));
+            $date_p = date("M j, Y", strtotime($entry['date']));
             if($show!=true){
-              $text = "<a href='?id={$id}'><div class='e'><span class='text'>" . $text . "</span><span class='date' title='{$date}'>{$date_p}</span></div></a>";
+              $text = "<a href='?id={$id}'><div class='e index'><p><b><img class='pp' src='{$avatar}'> {$nick} • </b><span class='date' title='{$date}'>{$date_p}</span></p><span class='text'>" . $text . "</span></div></a>";
             } else {
-              $text = "<div class='e show'><a href='{$url}'><h3><img class='pp' src='{$avatar}'> {$nick}</h3></a><h1 class='text'>" . $text . "</h1><p><span>#{$id}</span><span class='date' title='{$date}'>{$date_p}</span></p></div>";
+              $text = "<div class='e show'><h3><a href='{$url}'><img class='pp' src='{$avatar}'> {$nick}</a> • <span class='date' title='{$date}'>{$date_p}</span><span class='date' style='float:right'>#{$id}<span></h3><h2 class='text'>" . $text . "</h2></div>";
             }
             $html .= str_replace('{entry}', $text, $entryWrap);
         }
