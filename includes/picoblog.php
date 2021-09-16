@@ -206,7 +206,7 @@ class PicoBlog
             $date = $entry['date'];
             $date_p = date("M j, Y", strtotime($entry['date']));
             if($show!=true){
-              $text = "<div class='e elist'><p><b><img class='pp' src='{$avatar}'> {$nick} • </b><span class='date' title='{$date}'>{$date_p}<a class='go' href='?id={$id}'>➜</a></span></p><span class='text'>" . $text . "</span></div>";
+              $text = "<div class='e elist'><p><b><a href='?'><img class='pp' src='{$avatar}'> {$nick}</a> • </b><span class='date' title='{$date}'>{$date_p}<a class='go' href='?id={$id}'>➜</a></span></p><span class='text'>" . $text . "</span></div>";
             } else {
               $text = "<div class='e show'><h3><a href='?'><img class='pp' src='{$avatar}'> {$nick}</a> • <span class='date' title='{$date}'>{$date_p}</span><span class='date' style='float:right'>#{$id}<span></h3><h2 class='text'>" . $text . "</h2></div>";
             }
