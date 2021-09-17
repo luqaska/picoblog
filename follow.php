@@ -2,8 +2,11 @@
 // Inlcude the files
 include_once 'settings.php';
 if($url_in_this_server==true){$url=$_SERVER['HTTP_HOST']."/".$url;}
-?>
 
+if(isset($_POST["twtsocial_url"])){
+  echo "<meta http-equiv=\"Refresh\" content=\"0; url='http://".$_POST["twtsocial_url"]."/follow?nick=".$nick."&url=".$url."'\" />";
+}else{
+?>
 <!DOCTYPE html>
 <html lang="<?= $lang ?>">
 
@@ -21,9 +24,13 @@ if($url_in_this_server==true){$url=$_SERVER['HTTP_HOST']."/".$url;}
   </header></a>
   <div id="follow_inst"><br>
     <a href="javascript:history.back()">Go back</a><br>
-    <h2>Follow <?php echo "{$nick}@{$_SERVER['HTTP_HOST']}" ?></h2>
+    <h1>Follow <?php echo "{$nick}@{$_SERVER['HTTP_HOST']}" ?></h1>
+    <h2>Using a terminal client</h2>
     <p>Enter a TXTWT client, modify de placeholder with the name of the program and execute it: <code><?php echo("[software] follow $nick $url</code>"); ?></code></p>
+    <h2>Using Twt.social</h2>
+    <p><form method="POST"><label for="twtsocial_url">Instance URL: http://</label><input type="text" name="twtsocial_url"> <button>Follow</button></form></p>
   </div>
 </body>
 
 </html>
+<?php } ?>
