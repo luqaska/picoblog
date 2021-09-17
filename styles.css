@@ -82,13 +82,13 @@ header img{
 }
 .e img.cimg{
   border-radius:10px;
-  border: solid 3px rgb(51, 51, 51);
-  margin: 3px 0 0 0;
+  border:solid 3px rgb(51, 51, 51);
+  margin:3px 0 0 0;
   background:black;
-  width:99.70%;
+  width:99.5%;
   height:300px;
   object-fit:none;
-  text-align:center;
+  cursor:zoom-in;
 }
 .go{
   color:white;
