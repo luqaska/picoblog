@@ -1,5 +1,4 @@
 <?php // Settings (most of them will be eliminated soon)
-$lang="es";
 $url="blog.txt"; $url_in_this_server=false;
 $name = "Name";
 $nick = "luqaska";
