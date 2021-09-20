@@ -8,7 +8,7 @@ if(isset($_POST["twtsocial_url"])){
 }else{
 ?>
 <!DOCTYPE html>
-<html lang="<?= $lang ?>">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
