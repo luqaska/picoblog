@@ -13,7 +13,7 @@ $entries = ($query) ? $mb->getEntries($query) : $mb->getEntries('all');
 ?>
 
 <!DOCTYPE html>
-<html lang="<?= $lang ?>">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
