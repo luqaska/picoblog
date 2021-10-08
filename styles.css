@@ -91,6 +91,7 @@ header img{
   font-size:110%;
   align-self:center;
 }
+.utterances,.timeline{margin:0;padding:0;width:100%;}
 
 /* Footer */
 footer{
