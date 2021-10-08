@@ -98,8 +98,9 @@ footer{
   padding:10px;
   background:black;
   color:transparent;
+  cursor:default;
 }
-footer span{color:white;}
+footer span{color:white;cursor:text;}
 footer a{
   color:white;
   text-decoration:underline;
