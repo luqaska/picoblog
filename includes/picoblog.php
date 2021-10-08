@@ -205,10 +205,16 @@ class PicoBlog
             $text = \Slimdown::render($entry['entry']);
             $date = $entry['date'];
             $date_p = date("M j, Y", strtotime($entry['date']));
+            if($utterances){
+              if($utterances_label==true){
+                $utl="label='$utterances_label' ";
+              }else{$utl="";}
+              $ut="<script src='https://utteranc.es/client.js' repo='{$utterances_repo}' issue-term='og:title' {$utl}theme='{$utterances_theme}' crossorigin='anonymous' async></script>";
+            }else{$ut="";}
             if($show!=true){
               $text = "<div class='e elist'><p><b><a href='$url'><img class='pp' src='{$avatar}'> {$nick}</a> • </b><span class='date' title='{$date}'>{$date_p}<a class='go' href='?id={$id}'>➜</a></span></p><span class='text'>" . $text . "</span></div>";
             } else {
-              $text = "<div class='e show'><h3><a href='$url'><img class='pp' src='{$avatar}'> {$nick}</a> • <span class='date' title='{$date}'>{$date_p}</span><span class='date' style='float:right'>#{$id}<span></h3><h2 class='text'>" . $text . "</h2></div>";
+              $text = "<meta property='og:title' content='$id' /><div class='e show'><h3><a href='{$url}'><img class='pp' src='{$avatar}'> {$nick}</a> • <span class='date' title='{$date}'>{$date_p}</span><span class='date' style='float:right'>#{$id}<span></h3><h2 class='text'>" . $text . "</h2></div>{$ut}";
             }
             $html .= str_replace('{entry}', $text, $entryWrap);
         }
