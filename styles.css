@@ -4,6 +4,7 @@
 body{
   font-family:sans-serif;
   margin:0;
+  background:#2d2d2d;
 }
 a{
   text-decoration:none;
@@ -15,15 +16,13 @@ code{
   padding:3px;
   color:black;
 }
-#follow_inst{
-  margin:0 10px;
-}
+#follow_inst{margin:0 10px;}
 
 /* Header */
 header{
   /*width:100%;*/
-  padding: 10px;
-  background:repeat-y center fixed url("bkg.png");
+  padding:10px;
+  background:repeat-y center fixed url("https://lucas.koyu.space/imgs/carpincho.jpg");
   background-size:cover;
   color:white;
 }
@@ -43,9 +42,7 @@ header img{
   color:rgb(83, 83, 83);
   text-align:left;
 }
-#subh p span{
-  margin:0px 8px 0px 0px;
-}
+#subh p span{margin:0 8px 0 0;}
 #follow{
   float:right;
   background:rgb(59, 150, 180);
@@ -57,19 +54,15 @@ header img{
 
 /* Entries */
 .e{
-  margin:5px 10px 0px;
+  margin:5px 10px 0;
   padding:10px;
-  background:repeat-y center fixed url("bkg.png");
+  background:black;
   background-size:cover;
   color:white;
   border-radius:10px;
 }
-.e a{
-  color:white;
-}
-.e.show h2{
-  font-weight:normal;
-}
+.e a{color:white;}
+.e.show h2{font-weight:normal;}
 .e.show .date{
   font-size:70%;
   font-weight:normal;
@@ -97,4 +90,22 @@ header img{
   float:right;
   font-size:110%;
   align-self:center;
+}
+
+/* Footer */
+footer{
+  margin:10px 0 0 0;
+  padding:10px;
+  background:black;
+  color:transparent;
+}
+footer span{color:white;}
+footer a{
+  color:white;
+  text-decoration:underline;
+}
+
+/* Response */
+@media only screen and (min-width: 1000px) {
+  body{padding:0 14%;}
 }
