@@ -1,5 +1,5 @@
 <?php // Settings (most of them will be eliminated soon)
-$url="blog.txt"; $url_in_this_server=false;
+$url="blog.txt";
 $name = "Name";
 $nick = "luqaska";
 $avatar = "";
