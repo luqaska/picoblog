@@ -8,7 +8,7 @@
  */
 class Slimdown {
 	public static $rules = array (
-		'/(?<!!)\[([^\[]+)\]\(([^\)]+)\)/' => '<a href=\'\2\'>\1</a>',  // links
+		'/(?<!!)\[([^\[]+)\]\(([^\)]+)\)/' => '<a class=\'l\' href=\'\2\'>\1</a>',  // links
 		'/(\*\*|__)(.*?)\1/' => '<strong>\2</strong>',            // bold
 		'/(\*|_)(.*?)\1/' => '<em>\2</em>',                       // emphasis
 		'/\~\~(.*?)\~\~/' => '<del>\1</del>',                     // del
