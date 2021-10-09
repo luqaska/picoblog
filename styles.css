@@ -9,6 +9,7 @@ body{
 a{
   text-decoration:none;
   color:rgb(59, 150, 180);
+  /*color:#7abcff;*/
 }
 code{
   background:rgb(184, 184, 184);
@@ -62,6 +63,7 @@ header img{
   border-radius:10px;
 }
 .e a{color:white;}
+.e a.l{color:#7abcff;}
 .e.show h2{font-weight:normal;}
 .e.show .date{
   font-size:70%;
