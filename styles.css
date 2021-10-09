@@ -52,6 +52,10 @@ header img{
   border-radius:2px;
   font-size:100%;
 }
+#follow:hover{
+  transition: 2s;
+  background:rgb(49, 127, 153);
+}
 
 /* Entries */
 .e{
