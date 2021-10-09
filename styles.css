@@ -53,8 +53,8 @@ header img{
   font-size:100%;
 }
 #follow:hover{
-  transition: 2s;
-  background:rgb(49, 127, 153);
+  transition: 1s;
+  background:rgb(56, 142, 170);
 }
 
 /* Entries */
