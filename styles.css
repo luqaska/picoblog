@@ -38,6 +38,7 @@ header img{
 #subh{
   padding:1px 20px;
   background:#e0e0e0;
+  margin:0 0 10px 0;
 }
 #subh p{
   color:rgb(83, 83, 83);
@@ -53,7 +54,7 @@ header img{
   font-size:100%;
 }
 #follow:hover{
-  transition: 0.5s;
+  transition: 1s;
   background:rgb(56, 142, 170);
 }
 
