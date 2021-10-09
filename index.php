@@ -24,7 +24,7 @@ $entries = ($query) ? $mb->getEntries($query) : $mb->getEntries('all'); ?>
     <?php if($website!=false){
       echo("<span><i class='fa fa-globe'></i> <a href='http://$website'>$website</a></span>");
     } ?></p>
-  </div><br>
+  </div>
   <?php
   // Display message and link to main list if viewing a filtered entry list
   if ($query!=false) {
