@@ -30,7 +30,7 @@ No license, but made by @hxii
 MIT License
 
 Copyright (c) 2012-2021 Johnny Broadway <johnny@johnnybroadway.com>
-Copyright (c) 2020 Paul (hxii) Glushak
+Copyright (c) 2020 hxii
 Copyright (c) 2021 luqaska
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
