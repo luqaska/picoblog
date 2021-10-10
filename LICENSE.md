@@ -23,8 +23,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 # Dependencies
-## Engine
-No license, but made by @hxii
+## Engine (original)
+The [original engine](https://github.com/hxii/picoblog) has no license, so no attribution is necesary, but it was made by [@hxii](https://github.com/hxii), and thank you for making it!!!
 ## Slimdown (modified)
 ```
 MIT License
