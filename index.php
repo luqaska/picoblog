@@ -1,4 +1,11 @@
 <?php include_once 'settings.php';
+if(isset($_GET["feed"])){
+  if($https==true){$furl="https://";}else{$furl="http://";}
+  $furl .= "$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+  header("content-type: text/plain");
+  echo "# nick\t\t= {$name}\n# url\t\t= {$furl}\n# avatar\t= {$avatar}\n# description\t= {$description}\n";
+  include_once $url;
+}else{
 include_once 'includes/picoblog.php';
 $mb = new \hxii\PicoBlog($url);
 $query = $mb->parseQuery();
@@ -13,11 +20,11 @@ $entries = ($query) ? $mb->getEntries($query) : $mb->getEntries('all'); ?>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <a href="?"><header>
+  <header>
     <h1><img src="<?= $avatar ?>" alt="Avatar"> <?= $name ?> <span id="nick" style="font-weight:normal;font-size:50%"><?php echo "({$nick}@{$_SERVER['HTTP_HOST']})" ?></span></h1>
-  </header></a>
+  </header>
   <div id="subh"><br>
-    <desc><?= $description ?><?php echo("<a style='color:transparent;cursor:default'>.</a><a href='$url'><button id='follow'>Follow</button></a>"); ?></desc>
+    <desc><?= $description ?><?php echo("<a style='color:transparent;cursor:default'>.</a><a href='?feed'><button id='follow'>Follow</button></a>"); ?></desc>
     <p><?php if($ubication!=false){
       echo("<span><i class='fa fa-map-marker'></i> $ubication</span>");
     } ?>
@@ -37,3 +44,4 @@ $entries = ($query) ? $mb->getEntries($query) : $mb->getEntries('all'); ?>
 <footer><span style="float:left">&copy;2021 <a href="https://lucas.koyu.space">luqaska</a></span>.<a style="float:right" href="https://github.com/luqaska/twtxt-frontend">Code</a></footer>
 </body>
 </html>
+<?php } ?>
