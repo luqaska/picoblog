@@ -23,8 +23,7 @@ code{
 header{
   /*width:100%;*/
   padding:10px;
-  background:repeat-y center fixed url("https://lucas.koyu.space/imgs/carpincho.jpg");
-  background-size:cover;
+  background:black;
   color:white;
 }
 header img{
@@ -38,7 +37,6 @@ header img{
 #subh{
   padding:1px 20px;
   background:#e0e0e0;
-  margin:0 0 10px 0;
 }
 #subh p{
   color:rgb(83, 83, 83);
@@ -54,8 +52,15 @@ header img{
   font-size:100%;
 }
 #follow:hover{
-  transition: 1s;
+  transition:0.5s;
   background:rgb(56, 142, 170);
+}
+
+/* Subtitle */
+.st{
+  background:rgb(0, 136, 248);
+  color:white;
+  margin:0 0 10px 0;padding:20px 5px;
 }
 
 /* Entries */
@@ -69,6 +74,8 @@ header img{
 }
 .e a{color:white;}
 .e a.l{color:#7abcff;}
+.e a.l:hover{text-decoration:underline;}
+.e a.l:action{color:#6ba1d8;transition:0.1s;}
 .e.show h2{font-weight:normal;}
 .e.show .date{
   font-size:70%;
@@ -99,6 +106,7 @@ header img{
   align-self:center;
 }
 .utterances,.timeline{margin:0;padding:0;width:100%;}
+.white{color:white;}
 
 /* Footer */
 footer{
