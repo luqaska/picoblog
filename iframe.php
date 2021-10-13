@@ -4,7 +4,7 @@ include_once 'settings.php';
 include_once 'includes/picoblog.php';
 
 // Instantiate the class with the source file
-$mb = new \hxii\PicoBlog($url);
+$mb = new \hxii\PicoBlog($route);
 
 // Parse query string and get blog entries
 $query = $mb->parseQuery();
