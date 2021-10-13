@@ -1,5 +1,4 @@
-<?php // Settings (most of them will be eliminated soon)
-$https=true; $route="blog.txt";
+<?php $https=true; $route="blog.txt";
 $name = "Name";
 $nick = "luqaska";
 $avatar = "";
