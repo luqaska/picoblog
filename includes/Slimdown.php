@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Slimdown - A very basic regex-based Markdown parser.
+ * [Modified] Slimdown - A very basic regex-based Markdown parser.
  * Author: Johnny Broadway <johnny@johnnybroadway.com>
  * Website: https://gist.github.com/jbroadway/2836900
  * License: MIT
@@ -16,6 +16,7 @@ class Slimdown {
 		'/`(.*?)`/' => '<code>\1</code>',                         // inline code
 		'/(?:!\[([^\[]+)\]\(([^\)]+)\))/' => '<br><a href=\'\2\' target=\'\_blank\'><img class=\'cimg\' src=\'\2\' alt=\'\1\' loading=\'lazy\'></a>',
 		'/==(.*?)==/' => '<mark>\1</mark>',
+    '/#(\w+)?/' => '<a class="l" href="?tag=$1" class="tag">#${1}</a>',
 	);
 
 	/**
