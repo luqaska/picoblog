@@ -4,10 +4,10 @@ if(isset($_GET["feed"])){
 	$furl .= "$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 	header("content-type: text/plain");
 	echo "# nick\t\t= {$nick}\n# url\t\t= {$furl}\n# avatar\t= {$avatar}\n# description\t= {$description}\n";
-	include_once $url;
+	include_once $route;
 }else{
 include_once 'includes/picoblog.php';
-$mb = new \hxii\PicoBlog($url);
+$mb = new \hxii\PicoBlog($route);
 $query = $mb->parseQuery();
 $entries = ($query) ? $mb->getEntries($query) : $mb->getEntries('all'); if(isset($_GET["tag"])!=true){$css="#subh{margin:0 0 10px 0;}".$css;} ?>
 <!DOCTYPE html>
